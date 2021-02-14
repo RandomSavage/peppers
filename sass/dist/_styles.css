@@ -69,7 +69,7 @@ body {
 #container-wrapper #jumbo {
   height: 100%;
   width: 100%;
-  background: url("../../public/jumboPeppers.jpg");
+  background: url("../../public/habs.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -78,6 +78,7 @@ body {
   width: 60%;
   margin: 0 auto;
   padding: 50px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -85,25 +86,29 @@ body {
 }
 #container-wrapper #jumbo #header a {
   text-decoration: none;
-  color: #fff;
+  color: #ece9e9;
   z-index: 10;
-  text-shadow: 2px 2px #ff0000;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px #333;
   backdrop-filter: blur(20px);
   border-radius: 5px;
   padding: 5px;
 }
 #container-wrapper #jumbo #banner-box {
+  border-top: 2px dashed #ece9e9;
   width: 60%;
-  height: 300px;
-  margin: 30px auto;
-  padding: 12px;
+  height: 260px;
+  margin: 0 auto;
+  padding: 40px 0 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 #container-wrapper #jumbo #banner-box h1 {
   font-size: 10vw;
-  color: #fff;
+  letter-spacing: 35px;
+  color: #333;
   z-index: 10;
   text-shadow: 2px 2px #ff0000;
   text-transform: uppercase;
@@ -111,17 +116,45 @@ body {
 }
 #container-wrapper #jumbo #banner-box h3 {
   font-size: 2vw;
+  letter-spacing: 3px;
   text-align: center;
-  color: #fff;
+  color: #333;
   z-index: 10;
   text-shadow: 2px 2px #ff0000;
 }
 #container-wrapper #jumbo #banner-box img {
   text-align: center;
-  height: 20%;
-  width: 20%;
-  margin: 30px auto;
-  padding: 20px;
+  height: 60px;
+  width: 60px;
+  margin: 0 auto;
+  border: none;
+  padding: 15px;
+}
+#container-wrapper #jumbo #paragraph {
+  width: 30%;
+  height: 180px;
+  margin: -10px auto;
+  padding: 10px 50px;
+  background-color: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(8px);
   border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container-wrapper #jumbo #paragraph h6 {
+  font-size: 1.8vw;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #333;
+  z-index: 10;
+  padding-bottom: 8px;
+}
+#container-wrapper #jumbo #paragraph p {
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: #333;
+  z-index: 10;
 }
