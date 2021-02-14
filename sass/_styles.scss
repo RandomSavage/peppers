@@ -1,10 +1,12 @@
 @import './reset';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,400;1,500;1,700&family=Nanum+Myeongjo:wght@400;700;800&family=Sriracha&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
 
 body{
-  font-family: 'Fira Sans', sans-serif;
+  // font-family: 'Fira Sans', sans-serif;
+  font-family: 'Reggae One', cursive;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 #container-wrapper{
@@ -12,7 +14,7 @@ body{
   height: 100vh;
   width: 100vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   #jumbo{
     height: 100%;
@@ -25,7 +27,7 @@ body{
     #header{
       width: 60%;
       margin: 0 auto;
-      padding: 50px;
+      padding: 35px;
       padding-bottom: 25px;
       display: flex;
       flex-direction: row;
@@ -45,22 +47,23 @@ body{
       }
     }
     #banner-box{
-      border-top: 2px dashed rgb(236, 233, 233);
+      // border-top: 2px dashed rgb(236, 233, 233);
       width: 60%;
       height: 260px;
       margin: 0 auto;
-      padding: 40px 0 20px;
+      padding: 40px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       h1{
         font-size: 10vw;
-        letter-spacing: 35px;
-        color: #333;
+        letter-spacing: 30px;
+        color: #fff;
         z-index: 10;
         text-shadow: 2px 2px #ff0000;
         text-transform: uppercase;
         text-align: center;
+        margin-bottom: 20px;
       }
       h3{
         font-size: 2vw;
@@ -85,31 +88,90 @@ body{
     }
     #paragraph{
       width: 30%;
-      height: 180px;
-      margin: -10px auto;
-      padding: 10px 50px;
-      background-color: rgba(255, 255, 255, 0.25);
-      backdrop-filter: blur(8px);
+      height: 200px;
+      margin: 0 auto;
+      padding: 8px;
+      // background-color: rgba(255, 255, 255, 0.096);
+      // backdrop-filter: blur(8px);
       border-radius: 5px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       h6{
         font-size: 1.8vw;
+        text-shadow: 1px 1px #fff;
+        letter-spacing: 3.5px;
         line-height: 1.2;
         letter-spacing: 2px;
         text-align: center;
         color: #333;
         z-index: 10;
         padding-bottom: 8px;
+        // background-color: rgba(255, 255, 255, 0.096);
+        // backdrop-filter: blur(8px);
       }
       p{
         // font-size: 2vw;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 300;
         line-height: 1.5;
         letter-spacing: 1.5px;
+        text-shadow: 1px 1px #333;
+        padding: 10px;
         text-align: center;
-        color: #333;
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.096);
+        border-radius: 5px;
         z-index: 10;
+      }
+    }
+  }
+  #menu{
+    // text-align: center;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 40px;
+    border-top: 5px solid #333;
+    position: relative;
+    h3{
+      font-size: 2vw;
+      letter-spacing: 3px;
+      background: #fff;
+      padding: 10px 20px;
+      position: absolute;
+      top: -30px;
+      right: 45%;
+      text-align: center;
+    }
+    #item-container{
+      font-family: 'Fira Sans', sans-serif;
+      width: 60%;
+      height: 100vh;
+      margin: 40px auto;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      .item{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        background:rgb(236, 233, 233);
+        border-radius: 5px;
+        h5{
+          font-family: 'Reggae One', cursive;
+          padding: 2.5px;
+          font-weight: 800;
+        }
+        h6{
+          font-size: small;
+          padding: 10px;
+          font-weight: 600;
+        }
+        p{
+          padding: 2.5px;
+          font-size: 12px;
+          font-weight: 400;
+        }
       }
     }
   }
