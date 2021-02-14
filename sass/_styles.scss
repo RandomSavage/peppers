@@ -1,10 +1,12 @@
 @import './reset';
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,400;1,500;1,700&family=Nanum+Myeongjo:wght@400;700;800&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Reggae+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap');
 
 body{
   // font-family: 'Fira Sans', sans-serif;
-  font-family: 'Reggae One', cursive;
+  font-family: 'Noto Sans SC', sans-serif;
+  // font-family: 'Reggae One', cursive;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -19,7 +21,7 @@ body{
   #jumbo{
     height: 100%;
     width: 100%;
-    background: url('../../public/habs.jpg');
+    background: url('../../public/hab2.jpg');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -56,11 +58,11 @@ body{
       flex-direction: column;
       justify-content: center;
       h1{
-        font-size: 10vw;
+        font-size: 12vw;
         letter-spacing: 30px;
-        color: #fff;
+        color: #1b1b1b;
         z-index: 10;
-        text-shadow: 2px 2px #ff0000;
+        text-shadow: 2px 2px #8c00ff;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 20px;
@@ -71,7 +73,7 @@ body{
         text-align: center;
         color: #333;
         z-index: 10;
-        text-shadow: 2px 2px #ff0000;
+        text-shadow: 2px 1px #8c00ff;
       }
       img{
         text-align: center;
@@ -99,7 +101,7 @@ body{
       justify-content: center;
       h6{
         font-size: 1.8vw;
-        text-shadow: 1px 1px #fff;
+        text-shadow: 2px 1px #8c00ff;
         letter-spacing: 3.5px;
         line-height: 1.2;
         letter-spacing: 2px;
@@ -116,7 +118,7 @@ body{
         font-weight: 300;
         line-height: 1.5;
         letter-spacing: 1.5px;
-        text-shadow: 1px 1px #333;
+        text-shadow: 2px 1px #8c00ff;
         padding: 10px;
         text-align: center;
         color: #fff;
@@ -175,9 +177,172 @@ body{
       }
     }
   }
+  #teaser{
+    height: fit-content;
+    width: 100vw;
+    margin: 100px auto 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    gap: 5px;
+    color: #333;
+    // background: #1b1b1b;
+    .top{
+      height: 100%;
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      .image{
+        height: 100%;
+        width: 50%;
+        background: url('../../public/soup.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 5px 5px 0 5px;
+      }
+      .info{
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Fira Sans', sans-serif;
+        background: #fff;
+        h3{
+          font-size: 2vw;
+          font-family: 'Reggae One', cursive;
+          letter-spacing: 3px;
+          margin-bottom: 10px;
+        }
+        h5{
+          padding: 2.5px;
+          font-weight: 300;
+        }
+        p{
+          font-size: 10px;
+          padding: 2.5px;
+          font-weight: 800;
+          margin-bottom: 30px;
+        }
+        h6{
+          font-size: 12px;
+          padding: 2.5px;
+          font-weight: 800;
+        }
+      }
+    }
+    .middle{
+      height: 100%;
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      .image{
+        height: 100%;
+        width: 50%;
+        background: url('../../public/pasta.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        border-radius: 0 5px 5px 0;
+      }
+      .info{
+        padding: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Fira Sans', sans-serif;
+        h3{
+          font-size: 2vw;
+          font-family: 'Reggae One', cursive;
+          letter-spacing: 3px;
+          margin-bottom: 10px;
+        }
+        h5{
+          padding: 2.5px;
+          font-weight: 300;
+        }
+        p{
+          font-size: 10px;
+          padding: 2.5px;
+          font-weight: 800;
+          margin-bottom: 30px;
+        }
+        h6{
+          font-size: 12px;
+          padding: 2.5px;
+          font-weight: 800;
+        }
+      }
+    }
+    .bottom{
+      height: 100%;
+      width: 60%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      .image{
+        height: 100%;
+        width: 50%;
+        background: url('../../public/salad.jpg');
+        background-size: cover;
+        background-position: top;
+        background-repeat: no-repeat;
+        border-radius: 5px 0 5px 5px;
+      }
+      .info{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-family: 'Fira Sans', sans-serif;
+        h3{
+          font-size: 2vw;
+          font-family: 'Reggae One', cursive;
+          letter-spacing: 3px;
+          margin-bottom: 20px;
+        }
+        h5{
+          padding: 2.5px;
+          font-weight: 300;
+        }
+        p{
+          font-size: 10px;
+          padding: 2.5px;
+          font-weight: 800;
+          margin-bottom: 30px;
+        }
+        h6{
+          font-size: 12px;
+          padding: 2.5px;
+          font-weight: 800;
+        }
+      }
+    }
+  }
+  #crew{
+    height: 100%;
+    width: 100vw;
+    margin: 60px auto;
+    background: url('../../public/chefs.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    #crew-jumbo{
+      height: 500px;
+      width: 100vw;
+    }
 }
 @media only screen and (max-width: 767px) {
   #container-wrapper{
    
   }
+ }
 }
