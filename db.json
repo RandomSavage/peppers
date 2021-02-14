@@ -1,0 +1,22 @@
+
+
+{
+    "Records":{ 
+    "Frankie Bones":[
+      {
+        "title": "We Can Do This",
+        "label": "",
+        "style": "Hardcore, Acid, Techno",
+        "year": 1993,
+        "tracklist":["We Can Do This(Industrial Strength Remix)", "Minimalism(X-Crash Maximalacid Remix)", "From Kings To Queens(Kings Country Perspective)", "Fuzz Box(Hard Trance Mix)"]
+      },
+      {
+        "title": "Lords Of Acid – Rubber Doll - The Remixes By Frankie Bones Et Sven Maes",
+        "label": "Krypton Records",
+        "style": "House, Techno",
+        "year": 1997,
+        "tracklist":["Rubber Doll (Do You Mind If We Dance Wif Yo Dates? Mix [Frankie Bones Remix])", "Rubber Doll (Back Off! The Bitch Is Mine Mix [Sven Maes Remix])"]
+      }
+    ]
+  }
+}
