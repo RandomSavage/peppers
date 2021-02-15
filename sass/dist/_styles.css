@@ -98,6 +98,10 @@ body {
   border-radius: 5px;
   padding: 5px;
 }
+#container-wrapper #jumbo #header a:hover {
+  text-shadow: 2px 4px #333;
+  backdrop-filter: blur(0px);
+}
 #container-wrapper #jumbo #banner-box {
   width: 60%;
   height: 260px;
@@ -448,6 +452,8 @@ body {
   font-weight: 400;
 }
 #container-wrapper #testimonials {
+  height: 100vh;
+  width: 100vw;
   background: #333;
   position: relative;
 }
@@ -516,4 +522,70 @@ body {
   line-height: 1.2;
   letter-spacing: 2px;
   padding-left: 10px;
+}
+#container-wrapper #map-con {
+  height: 600px;
+  width: 100vw;
+}
+#container-wrapper #map-con .map-box {
+  height: 100%;
+  width: 100%;
+  background: url("../../public/map.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#container-wrapper #footer {
+  height: 600px;
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#container-wrapper #footer #foot-locker {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+#container-wrapper #footer #foot-locker .store {
+  text-align: center;
+}
+#container-wrapper #footer #foot-locker .store h3 {
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#container-wrapper #footer #foot-locker .store p {
+  font-size: 1vw;
+  font-weight: 100;
+  line-height: 2;
+  letter-spacing: 2px;
+  padding: 2px;
+}
+#container-wrapper #footer #foot-locker .store .foot-image img {
+  text-align: left;
+  height: 40px;
+  width: 40px;
+  padding: 15px 20px 0 0;
+}
+#container-wrapper #footer #foot-locker .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#container-wrapper #footer #foot-locker .address p {
+  font-size: 1vw;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+}
+#container-wrapper #footer #foot-locker .social a {
+  text-decoration: none;
+  color: #333;
+}
+#container-wrapper #footer #foot-locker .social a i {
+  font-size: 2vw;
+  padding: 30px;
 }
