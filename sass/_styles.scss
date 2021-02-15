@@ -194,7 +194,7 @@ body{
     gap: 5px;
     color: #333;
     // background: #1b1b1b;
-    .top{
+    .soups{
       height: 100%;
       width: 60%;
       margin: 0 auto;
@@ -222,7 +222,7 @@ body{
           font-size: 2vw;
           font-family: 'Reggae One', cursive;
           letter-spacing: 3px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
         h5{
           padding: 2.5px;
@@ -241,7 +241,7 @@ body{
         }
       }
     }
-    .middle{
+    .pasta{
       height: 100%;
       width: 60%;
       margin: 0 auto;
@@ -268,7 +268,7 @@ body{
           font-size: 2vw;
           font-family: 'Reggae One', cursive;
           letter-spacing: 3px;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
         h5{
           padding: 2.5px;
@@ -287,13 +287,24 @@ body{
         }
       }
     }
-    .bottom{
+    .salads{
       height: 100%;
       width: 60%;
       margin: 0 auto;
+      padding-bottom: 40px;
       display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      border-bottom: 5px solid #333;
+      position: relative;
+      .teaser-border{
+        position: absolute;
+        top: 279px;
+        left: 40%;
+        background: #fff;
+        padding: 0 30px;
+        text-transform: uppercase;
+      }
       .image{
         height: 100%;
         width: 50%;
@@ -337,7 +348,7 @@ body{
   #crew{
     height: 100%;
     width: 100vw;
-    margin: 60px auto;
+    margin: 60px auto 0;
     background: url('../../public/chefs.jpg');
     background-size: cover;
     background-position: center;
@@ -345,11 +356,144 @@ body{
     #crew-jumbo{
       height: 500px;
       width: 100vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      color:rgb(236, 233, 233);
+      #left-crew{
+        max-width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+        // border-right: 5px dashed red;
+        margin: 80px 0 20px 0px;
+        .crew-info{
+          color: #333;
+          background-color: rgba(255, 255, 255, .3);
+          border-radius: 5px;
+          padding: 20px;
+          // margin-bottom: 30px;
+          h5{
+          font-family: 'Reggae One', cursive;
+          padding-bottom: 10px;
+          }
+          p{
+            font-size: 14px;
+            letter-spacing: 1.2px;
+            line-height: 1;
+            padding: 2.5px;
+            font-weight: 400;
+          }
+        }
+      }
+      #right-crew{
+        margin: 80px 40px 20px 0px;
+        .crew-stats{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          margin-bottom: 30px;
+          .image{
+            text-align: center;
+            margin-right: 20px;
+            img{
+              text-align: center;
+              height: 40px;
+              width: 40px;
+              // margin: 0 0 20px;
+              padding: 15px;
+            }
+          }
+          .stats{
+            h3{
+              font-size: 3vw;
+              padding-bottom: 10px;
+            }
+            p{
+              font-size: 14px;
+              padding: 2.5px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
     }
+  }
+  #testimonials{
+    background: #333;
+    position: relative;
+    h3{
+      font-size: 2vw;
+      letter-spacing: 3px;
+      padding: 0 60px;
+      position: absolute;
+      top: 50px;
+      right: 38%;
+      background: #333;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    .bot{
+      font-size: 1.2vw;
+      letter-spacing: 3px;
+      padding: 0 40px;
+      font-weight: 600;
+      position: absolute;
+      top: 493px;
+      right: 45%;
+      background: #333;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    #testies{
+      max-width: 80%;
+      border-top: 10px solid #fff;
+      border-bottom: 5px solid #fff;
+      margin: 60px auto;
+      padding-top: 60px;
+      padding-bottom: 60px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      .test-cards{
+        color: #fff;
+        h5{
+          font-size: 1.5vw;
+          font-weight: 400;
+          padding-bottom: 10px;
+        }
+        p{
+          font-size: 1vw;
+          font-weight: 100;
+          line-height: 1.5;
+          letter-spacing: 2px;
+
+        }
+        .test-image{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-start;
+          padding-top: 10px;
+          img{
+            height: 150px;
+            width: 150px;
+          border-radius: 5px;
+
+          }
+          h6{
+            margin: auto 10px;
+            font-weight: 100;
+            line-height: 1.2;
+            letter-spacing: 2px;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 @media only screen and (max-width: 767px) {
   #container-wrapper{
    
   }
  }
-}
