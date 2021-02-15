@@ -12,15 +12,15 @@ body{
 }
 
 #container-wrapper{
-  background: rgb(31, 31, 94);
-  height: 100vh;
-  width: 100vw;
+  background: #fff;
+  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   #jumbo{
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background: url('../../public/variety.jpg');
     background-size: cover;
     background-position: 0 25%;
@@ -512,7 +512,7 @@ body{
     }
   }
   #footer{
-    height: 600px;
+    height: 100px;
     width: 100vw;
     padding-top: 60px;
     padding-bottom: 60px;
