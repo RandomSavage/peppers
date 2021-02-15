@@ -21,9 +21,9 @@ body{
   #jumbo{
     height: 100%;
     width: 100%;
-    background: url('../../public/hab2.jpg');
+    background: url('../../public/variety.jpg');
     background-size: cover;
-    background-position: top;
+    background-position: 0 25%;
     background-repeat: no-repeat;
 
     #header{
@@ -59,33 +59,26 @@ body{
       justify-content: center;
       h1{
         font-size: 12vw;
-        letter-spacing: 30px;
-        color: #1b1b1b;
+        font-weight: 100;
+        letter-spacing: 4px;
+        color: #fff;
         z-index: 10;
-        text-shadow: 2px 2px #8c00ff;
+        // text-shadow: 2px 2px #8c00ff;
         text-transform: uppercase;
         text-align: center;
         margin-bottom: 20px;
       }
       h3{
-        font-size: 2vw;
+        font-size: 3vw;
+        font-weight: 200;
         letter-spacing: 3px;
         text-align: center;
-        color: #333;
+        // color: #333;
+        color: #fff;
         z-index: 10;
-        text-shadow: 2px 1px #8c00ff;
-      }
-      img{
-        text-align: center;
-        height: 60px;
-        width: 60px;
-        margin: 0 auto;
-        border: none;
-        padding: 15px;
-        // backdrop-filter: blur(8px);
-        // border-radius: 5px;
-      // background-color: rgba(255, 255, 255, 0.25);
-        
+        // margin-left: 161px;
+        margin-bottom: 20px;
+        // text-shadow: 2px 1px #8c00ff;
       }
     }
     #paragraph{
@@ -100,31 +93,45 @@ body{
       flex-direction: column;
       justify-content: center;
       h6{
-        font-size: 1.8vw;
-        text-shadow: 2px 1px #8c00ff;
+        font-size: 2vw;
+        // text-shadow: 2px 1px #8c00ff;
         letter-spacing: 3.5px;
         line-height: 1.2;
         letter-spacing: 2px;
         text-align: center;
         color: #333;
         z-index: 10;
-        padding-bottom: 8px;
-        // background-color: rgba(255, 255, 255, 0.096);
+        padding: 20px;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 5px 5px 0 0;
+        border-bottom: 1px dashed #fff;
         // backdrop-filter: blur(8px);
       }
       p{
-        // font-size: 2vw;
+        font-size: 1.2vw;
         font-family: 'Fira Sans', sans-serif;
-        font-weight: 300;
+        font-weight: 400;
         line-height: 1.5;
         letter-spacing: 1.5px;
-        text-shadow: 2px 1px #8c00ff;
-        padding: 10px;
+        // text-shadow: 2px 1px #8c00ff;
+        padding: 20px;
         text-align: center;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.096);
-        border-radius: 5px;
+        color: #333;
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 0 0 5px 5px;
         z-index: 10;
+      }
+      img{
+        text-align: center;
+        height: 60px;
+        width: 60px;
+        margin: 0 0 20px;
+        border: none;
+        padding: 15px;
+        // backdrop-filter: blur(8px);
+        // border-radius: 5px;
+      // background-color: rgba(255, 255, 255, 0.25);
+        
       }
     }
   }
