@@ -70,8 +70,8 @@ body {
   justify-content: flex-start;
 }
 #container-wrapper #jumbo {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background: url("../../public/variety.jpg");
   background-size: cover;
   background-position: 0 25%;
@@ -588,4 +588,526 @@ body {
 #container-wrapper #footer #foot-locker .social a i {
   font-size: 2vw;
   padding: 30px;
+}
+
+@media only screen and (max-width: 767px) {
+  #container-wrapper {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+  }
+  #container-wrapper #jumbo {
+    height: 100vh;
+    width: 100vw;
+    background: url("../../public/variety.jpg");
+    background-size: cover;
+    background-position: 49% 25%;
+    background-repeat: no-repeat;
+  }
+  #container-wrapper #jumbo #header {
+    display: none;
+  }
+  #container-wrapper #jumbo #header a {
+    text-decoration: none;
+    color: #ece9e9;
+    z-index: 10;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px #333;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #container-wrapper #jumbo #header a:hover {
+    text-shadow: 2px 4px #333;
+    backdrop-filter: blur(0px);
+  }
+  #container-wrapper #jumbo #banner-box {
+    width: 60%;
+    height: 260px;
+    margin: 0 auto;
+    padding: 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #container-wrapper #jumbo #banner-box h1 {
+    font-size: 14vw;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #fff;
+    z-index: 10;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #jumbo #banner-box h3 {
+    font-size: 5vw;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #jumbo #paragraph {
+    width: 60%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #container-wrapper #jumbo #paragraph h6 {
+    font-size: 4vw;
+    letter-spacing: 3.5px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+    z-index: 10;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px dashed #fff;
+  }
+  #container-wrapper #jumbo #paragraph p {
+    font-size: 2.5vw;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 5px 5px;
+    z-index: 10;
+  }
+  #container-wrapper #jumbo #paragraph img {
+    height: 60px;
+    width: 60px;
+    margin: 0 0 0 55px;
+    padding: 15px;
+  }
+  #container-wrapper #menu {
+    height: 100vh;
+    width: 100vw;
+    margin-top: 40px;
+    border-top: 5px solid #333;
+    position: relative;
+  }
+  #container-wrapper #menu h3 {
+    font-size: 2vw;
+    letter-spacing: 3px;
+    background: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: -30px;
+    right: 45%;
+    text-align: center;
+  }
+  #container-wrapper #menu #item-container {
+    font-family: "Fira Sans", sans-serif;
+    width: 60%;
+    height: 100vh;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  #container-wrapper #menu #item-container .item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #ece9e9;
+    border-radius: 5px;
+  }
+  #container-wrapper #menu #item-container .item h5 {
+    font-family: "Reggae One", cursive;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #menu #item-container .item h6 {
+    font-size: small;
+    padding: 10px;
+    font-weight: 600;
+  }
+  #container-wrapper #menu #item-container .item p {
+    padding: 2.5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #container-wrapper #teaser {
+    height: fit-content;
+    width: 100vw;
+    margin: 100px auto 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    gap: 5px;
+    color: #333;
+  }
+  #container-wrapper #teaser .soups {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #container-wrapper #teaser .soups .image {
+    height: 100%;
+    width: 50%;
+    background: url("../../public/soup.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0 5px;
+  }
+  #container-wrapper #teaser .soups .info {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+    background: #fff;
+  }
+  #container-wrapper #teaser .soups .info h3 {
+    font-size: 2vw;
+    font-family: "Reggae One", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #teaser .soups .info h5 {
+    padding: 2.5px;
+    font-weight: 300;
+  }
+  #container-wrapper #teaser .soups .info p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #teaser .soups .info h6 {
+    font-size: 12px;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #teaser .pasta {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  #container-wrapper #teaser .pasta .image {
+    height: 100%;
+    width: 50%;
+    background: url("../../public/pasta.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 0 5px 5px 0;
+  }
+  #container-wrapper #teaser .pasta .info {
+    padding: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+  }
+  #container-wrapper #teaser .pasta .info h3 {
+    font-size: 2vw;
+    font-family: "Reggae One", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #teaser .pasta .info h5 {
+    padding: 2.5px;
+    font-weight: 300;
+  }
+  #container-wrapper #teaser .pasta .info p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #teaser .pasta .info h6 {
+    font-size: 12px;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #teaser .salads {
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 5px solid #333;
+    position: relative;
+  }
+  #container-wrapper #teaser .salads .teaser-border {
+    position: absolute;
+    top: 279px;
+    left: 40%;
+    background: #fff;
+    padding: 0 30px;
+    text-transform: uppercase;
+  }
+  #container-wrapper #teaser .salads .image {
+    height: 100%;
+    width: 50%;
+    background: url("../../public/salad.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 5px 0 5px 5px;
+  }
+  #container-wrapper #teaser .salads .info {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+  }
+  #container-wrapper #teaser .salads .info h3 {
+    font-size: 2vw;
+    font-family: "Reggae One", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #teaser .salads .info h5 {
+    padding: 2.5px;
+    font-weight: 300;
+  }
+  #container-wrapper #teaser .salads .info p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #teaser .salads .info h6 {
+    font-size: 12px;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #crew {
+    height: 100%;
+    width: 100vw;
+    margin: 60px auto 0;
+    background: url("../../public/chefs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #container-wrapper #crew #crew-jumbo {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ece9e9;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew {
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px;
+    margin: 80px 0 20px 0px;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew .crew-info {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew .crew-info h5 {
+    font-family: "Reggae One", cursive;
+    padding-bottom: 10px;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew .crew-info p {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    padding: 2.5px;
+    font-weight: 400;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew {
+    margin: 80px 40px 20px 0px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .image {
+    text-align: center;
+    margin-right: 20px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .image img {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats h3 {
+    font-size: 3vw;
+    padding-bottom: 10px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats p {
+    font-size: 14px;
+    padding: 2.5px;
+    font-weight: 400;
+  }
+  #container-wrapper #testimonials {
+    height: 100vh;
+    width: 100vw;
+    background: #333;
+    position: relative;
+  }
+  #container-wrapper #testimonials h3 {
+    font-size: 2vw;
+    letter-spacing: 3px;
+    padding: 0 60px;
+    position: absolute;
+    top: 50px;
+    right: 38%;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  #container-wrapper #testimonials .bot {
+    font-size: 1.2vw;
+    letter-spacing: 3px;
+    padding: 0 40px;
+    font-weight: 600;
+    position: absolute;
+    top: 493px;
+    right: 45%;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  #container-wrapper #testimonials #testies {
+    max-width: 80%;
+    border-top: 10px solid #fff;
+    border-bottom: 5px solid #fff;
+    margin: 60px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  #container-wrapper #testimonials #testies .test-cards {
+    color: #fff;
+  }
+  #container-wrapper #testimonials #testies .test-cards h5 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  #container-wrapper #testimonials #testies .test-cards p {
+    font-size: 1vw;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 2px;
+  }
+  #container-wrapper #testimonials #testies .test-cards .test-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  #container-wrapper #testimonials #testies .test-cards .test-image img {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  #container-wrapper #testimonials #testies .test-cards .test-image h6 {
+    margin: auto 10px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  #container-wrapper #map-con {
+    height: 600px;
+    width: 100vw;
+  }
+  #container-wrapper #map-con .map-box {
+    height: 100%;
+    width: 100%;
+    background: url("../../public/map.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #container-wrapper #footer {
+    height: 100px;
+    width: 100vw;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #container-wrapper #footer #foot-locker {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: 0 auto;
+  }
+  #container-wrapper #footer #foot-locker .store {
+    text-align: center;
+  }
+  #container-wrapper #footer #foot-locker .store h3 {
+    font-size: 2vw;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  #container-wrapper #footer #foot-locker .store p {
+    font-size: 1vw;
+    font-weight: 100;
+    line-height: 2;
+    letter-spacing: 2px;
+    padding: 2px;
+  }
+  #container-wrapper #footer #foot-locker .store .foot-image img {
+    text-align: left;
+    height: 40px;
+    width: 40px;
+    padding: 15px 20px 0 0;
+  }
+  #container-wrapper #footer #foot-locker .address {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #container-wrapper #footer #foot-locker .address p {
+    font-size: 1vw;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+  #container-wrapper #footer #foot-locker .social a {
+    text-decoration: none;
+    color: #333;
+  }
+  #container-wrapper #footer #foot-locker .social a i {
+    font-size: 2vw;
+    padding: 30px;
+  }
 }
