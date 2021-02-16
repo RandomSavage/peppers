@@ -748,7 +748,7 @@ body {
   #container-wrapper #teaser {
     height: fit-content;
     width: 100vw;
-    margin: 100px auto 20px;
+    margin: 0 0 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 33%);
@@ -757,15 +757,17 @@ body {
   }
   #container-wrapper #teaser .soups {
     height: 100%;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
+    padding-left: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    overflow-x: hidden;
   }
   #container-wrapper #teaser .soups .image {
     height: 100%;
-    width: 50%;
+    width: 60%;
     background: url("../../public/soup.jpg");
     background-size: cover;
     background-position: center;
@@ -773,7 +775,7 @@ body {
     border-radius: 5px 5px 0 5px;
   }
   #container-wrapper #teaser .soups .info {
-    padding: 50px;
+    padding: 0px 0px 0px 32px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -782,7 +784,7 @@ body {
     background: #fff;
   }
   #container-wrapper #teaser .soups .info h3 {
-    font-size: 2vw;
+    font-size: 6vw;
     font-family: "Reggae One", cursive;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -804,15 +806,15 @@ body {
   }
   #container-wrapper #teaser .pasta {
     height: 100%;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-end;
   }
   #container-wrapper #teaser .pasta .image {
     height: 100%;
-    width: 50%;
+    width: 60%;
     background: url("../../public/pasta.jpg");
     background-size: cover;
     background-position: top;
@@ -820,7 +822,7 @@ body {
     border-radius: 0 5px 5px 0;
   }
   #container-wrapper #teaser .pasta .info {
-    padding: 50px;
+    padding: 0px 32px 0px 0px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -828,7 +830,7 @@ body {
     font-family: "Fira Sans", sans-serif;
   }
   #container-wrapper #teaser .pasta .info h3 {
-    font-size: 2vw;
+    font-size: 6vw;
     font-family: "Reggae One", cursive;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -850,7 +852,7 @@ body {
   }
   #container-wrapper #teaser .salads {
     height: 100%;
-    width: 60%;
+    width: 100%;
     margin: 0 auto;
     padding-bottom: 40px;
     display: flex;
@@ -861,15 +863,15 @@ body {
   }
   #container-wrapper #teaser .salads .teaser-border {
     position: absolute;
-    top: 279px;
-    left: 40%;
+    top: 177px;
+    left: 33%;
     background: #fff;
     padding: 0 30px;
     text-transform: uppercase;
   }
   #container-wrapper #teaser .salads .image {
     height: 100%;
-    width: 50%;
+    width: 60%;
     background: url("../../public/salad.jpg");
     background-size: cover;
     background-position: top;
@@ -877,7 +879,7 @@ body {
     border-radius: 5px 0 5px 5px;
   }
   #container-wrapper #teaser .salads .info {
-    padding: 50px;
+    padding: 0px 0px 0px 32px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -885,7 +887,7 @@ body {
     font-family: "Fira Sans", sans-serif;
   }
   #container-wrapper #teaser .salads .info h3 {
-    font-size: 2vw;
+    font-size: 6vw;
     font-family: "Reggae One", cursive;
     letter-spacing: 3px;
     margin-bottom: 20px;
