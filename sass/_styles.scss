@@ -920,12 +920,13 @@ body{
         justify-content: space-around;
         color:rgb(236, 233, 233);
         #left-crew{
-          max-width: 50%;
+          max-width: 100%;
           display: grid;
-          grid-template-columns: repeat(2, 1fr);
+          grid-template-columns: 1fr;
           gap: 45px;
           // border-right: 5px dashed red;
           margin: 80px 0 20px 0px;
+          overflow: scroll;
           .crew-info{
             color: #333;
             background-color: rgba(255, 255, 255, .3);
@@ -964,9 +965,11 @@ body{
               }
             }
             .stats{
+              background-color: rgba(0, 0, 0, .4);
+              border-radius: 5px;
+              padding: 10px;
               h3{
-                font-size: 3vw;
-                padding-bottom: 10px;
+                font-size: 5vw;
               }
               p{
                 font-size: 14px;
