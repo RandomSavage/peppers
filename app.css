@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,600;0,800;1,400;1,500;1,700&family=Nanum+Myeongjo:wght@400;700;800&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Reggae+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,420 +56,1074 @@ table {
 }
 
 body {
-  font-family: "Fira Sans", sans-serif;
+  font-family: "Noto Sans SC", sans-serif;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 #container-wrapper {
-  background: #1f1f5e;
-  height: 100vh;
-  width: 100vw;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#container-wrapper #jumbo {
+  height: 100%;
+  width: 100%;
+  background: url("../../public/variety.jpg");
+  background-size: cover;
+  background-position: 0 25%;
+  background-repeat: no-repeat;
+}
+#container-wrapper #jumbo #header {
+  width: 60%;
+  margin: 0 auto;
+  padding: 35px;
+  padding-bottom: 25px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  overflow-x: hidden;
+  background: transparent;
 }
-#container-wrapper .side {
-  width: 20%;
-  background: #1b1b1b;
-  border-right: 2px solid #d6d2d2;
+#container-wrapper #jumbo #header a {
+  text-decoration: none;
+  color: #ece9e9;
+  z-index: 10;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-shadow: 2px 1px #333;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+  padding: 5px;
+}
+#container-wrapper #jumbo #header a:hover {
+  text-shadow: 2px 4px #333;
+  backdrop-filter: blur(0px);
+}
+#container-wrapper #jumbo #banner-box {
+  width: 60%;
+  height: 260px;
+  margin: 0 auto;
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
+}
+#container-wrapper #jumbo #banner-box h1 {
+  font-size: 12vw;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: #fff;
+  z-index: 10;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#container-wrapper #jumbo #banner-box h3 {
+  font-size: 3vw;
+  font-weight: 200;
+  letter-spacing: 3px;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+  margin-bottom: 20px;
+}
+#container-wrapper #jumbo #paragraph {
+  width: 30%;
+  height: 200px;
+  margin: 0 auto;
+  padding: 8px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#container-wrapper #jumbo #paragraph h6 {
+  font-size: 2vw;
+  letter-spacing: 3.5px;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #333;
+  z-index: 10;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px dashed #fff;
+}
+#container-wrapper #jumbo #paragraph p {
+  font-size: 1.2vw;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
   padding: 20px;
   text-align: center;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0 0 5px 5px;
+  z-index: 10;
 }
-#container-wrapper .side h2 {
-  color: #fff;
+#container-wrapper #jumbo #paragraph img {
+  text-align: center;
+  height: 60px;
+  width: 60px;
+  margin: 0 0 20px;
+  border: none;
+  padding: 15px;
+}
+#container-wrapper #menu {
+  height: 100vh;
+  width: 100vw;
+  margin-top: 40px;
+  border-top: 5px solid #333;
+  position: relative;
+}
+#container-wrapper #menu h3 {
+  font-size: 2vw;
+  letter-spacing: 3px;
+  background: #fff;
+  padding: 10px 20px;
+  position: absolute;
+  top: -30px;
+  right: 45%;
+  text-align: center;
+}
+#container-wrapper #menu #item-container {
+  font-family: "Fira Sans", sans-serif;
+  width: 60%;
+  height: 100vh;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#container-wrapper #menu #item-container .item {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: #ece9e9;
+  border-radius: 5px;
+}
+#container-wrapper #menu #item-container .item h5 {
+  font-family: "Reggae One", cursive;
+  padding: 2.5px;
+  font-weight: 800;
+}
+#container-wrapper #menu #item-container .item h6 {
+  font-size: small;
+  padding: 10px;
+  font-weight: 600;
+}
+#container-wrapper #menu #item-container .item p {
+  padding: 2.5px;
+  font-size: 12px;
+  font-weight: 400;
+}
+#container-wrapper #teaser {
+  height: fit-content;
+  width: 100vw;
+  margin: 100px auto 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 33%);
+  gap: 5px;
+  color: #333;
+}
+#container-wrapper #teaser .soups {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#container-wrapper #teaser .soups .image {
+  height: 100%;
+  width: 50%;
+  background: url("../../public/soup.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 5px 5px 0 5px;
+}
+#container-wrapper #teaser .soups .info {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+  background: #fff;
+}
+#container-wrapper #teaser .soups .info h3 {
+  font-size: 2vw;
+  font-family: "Reggae One", cursive;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#container-wrapper #teaser .soups .info h5 {
+  padding: 2.5px;
+  font-weight: 300;
+}
+#container-wrapper #teaser .soups .info p {
+  font-size: 10px;
+  padding: 2.5px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+#container-wrapper #teaser .soups .info h6 {
+  font-size: 12px;
+  padding: 2.5px;
+  font-weight: 800;
+}
+#container-wrapper #teaser .pasta {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#container-wrapper #teaser .pasta .image {
+  height: 100%;
+  width: 50%;
+  background: url("../../public/pasta.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 0 5px 5px 0;
+}
+#container-wrapper #teaser .pasta .info {
+  padding: 50px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Fira Sans", sans-serif;
+}
+#container-wrapper #teaser .pasta .info h3 {
+  font-size: 2vw;
+  font-family: "Reggae One", cursive;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#container-wrapper #teaser .pasta .info h5 {
+  padding: 2.5px;
+  font-weight: 300;
+}
+#container-wrapper #teaser .pasta .info p {
+  font-size: 10px;
+  padding: 2.5px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+#container-wrapper #teaser .pasta .info h6 {
+  font-size: 12px;
+  padding: 2.5px;
+  font-weight: 800;
+}
+#container-wrapper #teaser .salads {
+  height: 100%;
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  border-bottom: 5px solid #333;
+  position: relative;
+}
+#container-wrapper #teaser .salads .teaser-border {
+  position: absolute;
+  top: 279px;
+  left: 40%;
+  background: #fff;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+#container-wrapper #teaser .salads .image {
+  height: 100%;
+  width: 50%;
+  background: url("../../public/salad.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  border-radius: 5px 0 5px 5px;
+}
+#container-wrapper #teaser .salads .info {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-family: "Fira Sans", sans-serif;
+}
+#container-wrapper #teaser .salads .info h3 {
+  font-size: 2vw;
+  font-family: "Reggae One", cursive;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+#container-wrapper #teaser .salads .info h5 {
+  padding: 2.5px;
+  font-weight: 300;
+}
+#container-wrapper #teaser .salads .info p {
+  font-size: 10px;
+  padding: 2.5px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+#container-wrapper #teaser .salads .info h6 {
+  font-size: 12px;
+  padding: 2.5px;
+  font-weight: 800;
+}
+#container-wrapper #crew {
+  height: 100%;
+  width: 100vw;
+  margin: 60px auto 0;
+  background: url("../../public/chefs.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#container-wrapper #crew #crew-jumbo {
+  height: 500px;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: #ece9e9;
+}
+#container-wrapper #crew #crew-jumbo #left-crew {
+  max-width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 45px;
+  margin: 80px 0 20px 0px;
+}
+#container-wrapper #crew #crew-jumbo #left-crew .crew-info {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+}
+#container-wrapper #crew #crew-jumbo #left-crew .crew-info h5 {
+  font-family: "Reggae One", cursive;
+  padding-bottom: 10px;
+}
+#container-wrapper #crew #crew-jumbo #left-crew .crew-info p {
+  font-size: 14px;
+  letter-spacing: 1.2px;
+  line-height: 1;
+  padding: 2.5px;
+  font-weight: 400;
+}
+#container-wrapper #crew #crew-jumbo #right-crew {
+  margin: 80px 40px 20px 0px;
+}
+#container-wrapper #crew #crew-jumbo #right-crew .crew-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-bottom: 30px;
+}
+#container-wrapper #crew #crew-jumbo #right-crew .crew-stats .image {
+  text-align: center;
+  margin-right: 20px;
+}
+#container-wrapper #crew #crew-jumbo #right-crew .crew-stats .image img {
+  text-align: center;
+  height: 40px;
+  width: 40px;
+  padding: 15px;
+}
+#container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats h3 {
   font-size: 3vw;
-  font-style: italic;
-  font-weight: 200;
-  font-family: "Nanum Myeongjo", serif;
+  padding-bottom: 10px;
 }
-#container-wrapper .side #side-nav {
-  margin-top: 100px;
+#container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats p {
+  font-size: 14px;
+  padding: 2.5px;
+  font-weight: 400;
 }
-#container-wrapper .side #side-nav a {
-  text-decoration: none;
+#container-wrapper #testimonials {
+  height: 100vh;
+  width: 100vw;
+  background: #333;
+  position: relative;
+}
+#container-wrapper #testimonials h3 {
+  font-size: 2vw;
+  letter-spacing: 3px;
+  padding: 0 60px;
+  position: absolute;
+  top: 50px;
+  right: 38%;
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+}
+#container-wrapper #testimonials .bot {
+  font-size: 1.2vw;
+  letter-spacing: 3px;
+  padding: 0 40px;
+  font-weight: 600;
+  position: absolute;
+  top: 493px;
+  right: 45%;
+  background: #333;
+  color: #fff;
+  text-transform: uppercase;
+}
+#container-wrapper #testimonials #testies {
+  max-width: 80%;
+  border-top: 10px solid #fff;
+  border-bottom: 5px solid #fff;
+  margin: 60px auto;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+#container-wrapper #testimonials #testies .test-cards {
   color: #fff;
 }
-#container-wrapper .side #side-nav #mainNav ul li {
-  padding-top: 30px;
-}
-#container-wrapper .side #side-nav #mainNav .sub-menu ul {
-  display: none;
-  transition: all 3s ease-in-out;
-}
-#container-wrapper .side #side-nav #mainNav .sub-menu ul li a {
-  padding-top: 30px;
-}
-#container-wrapper .side #social {
-  margin-top: 200px;
-}
-#container-wrapper .side #social a i {
+#container-wrapper #testimonials #testies .test-cards h5 {
   font-size: 1.5vw;
-  padding: 8px;
+  font-weight: 400;
+  padding-bottom: 10px;
 }
-#container-wrapper .jumbo {
+#container-wrapper #testimonials #testies .test-cards p {
+  font-size: 1vw;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 2px;
+}
+#container-wrapper #testimonials #testies .test-cards .test-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+#container-wrapper #testimonials #testies .test-cards .test-image img {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+}
+#container-wrapper #testimonials #testies .test-cards .test-image h6 {
+  margin: auto 10px;
+  font-weight: 100;
+  line-height: 1.2;
+  letter-spacing: 2px;
+  padding-left: 10px;
+}
+#container-wrapper #map-con {
+  height: 600px;
+  width: 100vw;
+}
+#container-wrapper #map-con .map-box {
   height: 100%;
   width: 100%;
-  background: url("./public/shine.jpg");
+  background: url("../../public/map.jpg");
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+}
+#container-wrapper #footer {
+  height: 100px;
+  width: 100vw;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#container-wrapper #footer #foot-locker {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 0 auto;
+}
+#container-wrapper #footer #foot-locker .store {
+  text-align: center;
+}
+#container-wrapper #footer #foot-locker .store h3 {
+  font-size: 2vw;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+#container-wrapper #footer #foot-locker .store p {
+  font-size: 1vw;
+  font-weight: 100;
+  line-height: 2;
+  letter-spacing: 2px;
+  padding: 2px;
+}
+#container-wrapper #footer #foot-locker .store .foot-image img {
+  text-align: left;
+  height: 40px;
+  width: 40px;
+  padding: 15px 20px 0 0;
+}
+#container-wrapper #footer #foot-locker .address {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  position: relative;
 }
-#container-wrapper .jumbo h1 {
-  color: #fff;
-  font-size: 4vw;
-  font-style: italic;
-  font-weight: 400;
-  font-family: "Nanum Myeongjo", serif;
-  letter-spacing: 12px;
-  line-height: 1.2;
-  text-transform: uppercase;
-  margin-left: 80px;
-  margin-top: 80px;
+#container-wrapper #footer #foot-locker .address p {
+  font-size: 1vw;
+  font-weight: 100;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
 }
-#container-wrapper .jumbo .nav-toggle {
-  background: transparent;
-  border-color: transparent;
-  font-size: 1.8vw;
-  color: #fff;
-  position: absolute;
-  top: 40px;
-  right: 70px;
-  cursor: pointer;
+#container-wrapper #footer #foot-locker .social a {
+  text-decoration: none;
+  color: #333;
 }
-#container-wrapper .jumbo .nav-toggle:hover {
-  transform: rotate(90deg);
-}
-
-#mids {
-  height: 500px;
-  width: 100%;
-  color: #1b1b1b;
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-  position: relative;
-}
-#mids .left-mids {
-  margin-right: 150px;
-  border-right: 2px solid #d6d2d2;
-}
-#mids .left-mids .long {
-  height: 200px;
-  width: 400px;
-  background: url("./public/chef.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-#mids .left-mids .short {
-  height: 180px;
-  width: 200px;
-  background: url("./public/lanshu.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  z-index: 2;
-  top: 150px;
-  left: 350px;
-}
-#mids .right-mids {
-  width: 50%;
-  overflow: hidden;
-  padding-top: 95px;
-}
-#mids .right-mids h2 {
+#container-wrapper #footer #foot-locker .social a i {
   font-size: 2vw;
-  font-family: "Nanum Myeongjo", serif;
-  margin-bottom: 20px;
-}
-#mids .right-mids p {
-  line-height: 1.8;
-  font-weight: 200;
-}
-#mids .right-mids button {
-  margin-top: 40px;
-  padding: 3px 15px;
-  font-family: "Nanum Myeongjo", serif;
-  outline: none;
-  cursor: pointer;
-}
-
-#atmos {
-  height: 100%;
-  width: 100%;
-  color: #fff;
-  background: #1b1b1b;
-  height: 500px;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  padding: 50px;
-  position: relative;
-}
-#atmos .left-atmos {
-  border-right: 2px solid #d6d2d2;
-  width: 50%;
-  overflow: hidden;
-}
-#atmos .left-atmos h2 {
-  font-size: 2vw;
-  font-family: "Nanum Myeongjo", serif;
-  margin-bottom: 20px;
-}
-#atmos .left-atmos p {
-  line-height: 1.8;
-  font-weight: 200;
-  padding-right: 10px;
-}
-#atmos .left-atmos button {
-  margin-top: 70px;
-  padding: 3px 15px;
-  font-family: "Nanum Myeongjo", serif;
-  color: #fff;
-  background: #1b1b1b;
-  outline: none;
-  border-color: #fff;
-  cursor: pointer;
-}
-#atmos .right-atmos {
-  margin-left: 150px;
-  position: relative;
-}
-#atmos .right-atmos .stub {
-  height: 220px;
-  width: 200px;
-  background: url("./public/elk.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  z-index: 2;
-  top: 120px;
-  left: -50px;
-}
-#atmos .right-atmos .tower {
-  height: 400px;
-  width: 300px;
-  background: url("./public/roof.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: -100px;
-  left: 100px;
+  padding: 30px;
 }
 
 @media only screen and (max-width: 767px) {
   #container-wrapper {
-    background: #1f1f5e;
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-x: hidden;
+  }
+  #container-wrapper #jumbo {
     height: 100vh;
     width: 100vw;
+    background: url("../../public/variety.jpg");
+    background-size: cover;
+    background-position: 49% 25%;
+    background-repeat: no-repeat;
+  }
+  #container-wrapper #jumbo #header {
+    display: none;
+  }
+  #container-wrapper #jumbo #header a {
+    text-decoration: none;
+    color: #ece9e9;
+    z-index: 10;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px #333;
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+    padding: 5px;
+  }
+  #container-wrapper #jumbo #header a:hover {
+    text-shadow: 2px 4px #333;
+    backdrop-filter: blur(0px);
+  }
+  #container-wrapper #jumbo #banner-box {
+    width: 60%;
+    height: 260px;
+    margin: 0 auto;
+    padding: 60px 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #container-wrapper #jumbo #banner-box h1 {
+    font-size: 14vw;
+    font-weight: 600;
+    letter-spacing: 4px;
+    color: #fff;
+    z-index: 10;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #jumbo #banner-box h3 {
+    font-size: 5vw;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #fff;
+    z-index: 10;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #jumbo #paragraph {
+    width: 60%;
+    margin: 0 auto;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #container-wrapper #jumbo #paragraph h6 {
+    font-size: 4vw;
+    letter-spacing: 3.5px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #333;
+    z-index: 10;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px dashed #fff;
+  }
+  #container-wrapper #jumbo #paragraph p {
+    font-size: 2.5vw;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0 0 5px 5px;
+    z-index: 10;
+  }
+  #container-wrapper #jumbo #paragraph img {
+    height: 60px;
+    width: 60px;
+    margin: 0 0 0 55px;
+    padding: 15px;
+  }
+  #container-wrapper #menu {
+    height: fit-content;
+    width: 100vw;
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-top: 5px solid #333;
+    position: relative;
+  }
+  #container-wrapper #menu h3 {
+    font-size: 3vw;
+    letter-spacing: 3px;
+    background: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    top: -18px;
+    right: 41%;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #container-wrapper #menu #item-container {
+    font-family: "Fira Sans", sans-serif;
+    width: 77%;
+    height: 100%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    gap: 32px;
+  }
+  #container-wrapper #menu #item-container .item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px;
+    background: #ece9e9;
+    border-radius: 5px;
+  }
+  #container-wrapper #menu #item-container .item h5 {
+    font-family: "Reggae One", cursive;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #menu #item-container .item h6 {
+    font-size: small;
+    padding: 10px;
+    font-weight: 600;
+  }
+  #container-wrapper #menu #item-container .item p {
+    padding: 2.5px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  #container-wrapper #teaser {
+    height: fit-content;
+    width: 100vw;
+    margin: 0 0 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 33%);
+    gap: 5px;
+    color: #333;
+  }
+  #container-wrapper #teaser .soups {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 0px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     overflow-x: hidden;
   }
-  #container-wrapper .side {
-    width: 100vw;
-    background: #1b1b1b;
-    border-right: 2px solid #d6d2d2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding: 20px;
+  #container-wrapper #teaser .soups .image {
+    height: 100%;
+    width: 60%;
+    background: url("../../public/soup.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 5px 5px 0 5px;
+  }
+  #container-wrapper #teaser .soups .info {
+    padding: 0px 0px 0px 32px;
     text-align: center;
-    transform: translate(-100%);
-    display: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
+    background: #fff;
   }
-  #container-wrapper .side h2 {
-    color: #fff;
+  #container-wrapper #teaser .soups .info h3 {
     font-size: 6vw;
-    font-style: italic;
-    font-weight: 200;
-    font-family: "Nanum Myeongjo", serif;
+    font-family: "Reggae One", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
   }
-  #container-wrapper .side #side-nav {
-    margin-top: 100px;
+  #container-wrapper #teaser .soups .info h5 {
+    padding: 2.5px;
+    font-weight: 300;
   }
-  #container-wrapper .side #side-nav a {
-    text-decoration: none;
-    color: #fff;
+  #container-wrapper #teaser .soups .info p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
   }
-  #container-wrapper .side #side-nav #mainNav ul li {
-    padding-top: 30px;
+  #container-wrapper #teaser .soups .info h6 {
+    font-size: 12px;
+    padding: 2.5px;
+    font-weight: 800;
   }
-  #container-wrapper .side #side-nav #mainNav .sub-menu ul {
-    display: none;
-    transition: all 3s ease-in-out;
+  #container-wrapper #teaser .pasta {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
-  #container-wrapper .side #side-nav #mainNav .sub-menu ul li a {
-    padding-top: 30px;
+  #container-wrapper #teaser .pasta .image {
+    height: 100%;
+    width: 60%;
+    background: url("../../public/pasta.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 0 5px 5px 0;
   }
-  #container-wrapper .side #social {
-    margin-top: 100px;
+  #container-wrapper #teaser .pasta .info {
+    padding: 0px 32px 0px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Fira Sans", sans-serif;
   }
-  #container-wrapper .side #social a i {
-    font-size: 5vw;
-    padding: 8px;
+  #container-wrapper #teaser .pasta .info h3 {
+    font-size: 6vw;
+    font-family: "Reggae One", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
   }
-  #container-wrapper .show-side {
-    display: block;
-    transform: translate(0);
+  #container-wrapper #teaser .pasta .info h5 {
+    padding: 2.5px;
+    font-weight: 300;
   }
-  #container-wrapper .jumbo {
+  #container-wrapper #teaser .pasta .info p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #teaser .pasta .info h6 {
+    font-size: 12px;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #teaser .salads {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 5px solid #333;
+    position: relative;
+  }
+  #container-wrapper #teaser .salads .teaser-border {
+    position: absolute;
+    top: 177px;
+    left: 33%;
+    background: #fff;
+    padding: 0 30px;
+    text-transform: uppercase;
+  }
+  #container-wrapper #teaser .salads .image {
+    height: 100%;
+    width: 60%;
+    background: url("../../public/salad.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    border-radius: 5px 0 5px 5px;
+  }
+  #container-wrapper #teaser .salads .info {
+    padding: 0px 0px 0px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+  }
+  #container-wrapper #teaser .salads .info h3 {
+    font-size: 6vw;
+    font-family: "Reggae One", cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+  }
+  #container-wrapper #teaser .salads .info h5 {
+    padding: 2.5px;
+    font-weight: 300;
+  }
+  #container-wrapper #teaser .salads .info p {
+    font-size: 10px;
+    padding: 2.5px;
+    font-weight: 800;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #teaser .salads .info h6 {
+    font-size: 12px;
+    padding: 2.5px;
+    font-weight: 800;
+  }
+  #container-wrapper #crew {
     height: 100%;
     width: 100vw;
+    margin: 60px auto 0;
+    background: url("../../public/chefs.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  #container-wrapper #crew #crew-jumbo {
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #ece9e9;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 45px;
+    margin: 40px 0 20px 0px;
+    overflow: scroll;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew .crew-info {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    padding: 20px;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew .crew-info h5 {
+    font-family: "Reggae One", cursive;
+    padding-bottom: 10px;
+  }
+  #container-wrapper #crew #crew-jumbo #left-crew .crew-info p {
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    line-height: 1;
+    padding: 2.5px;
+    font-weight: 400;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew {
+    margin: 40px 40px 20px 0px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .image {
+    text-align: center;
+    margin-right: 20px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .image img {
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    padding: 15px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats h3 {
+    font-size: 5vw;
+  }
+  #container-wrapper #crew #crew-jumbo #right-crew .crew-stats .stats p {
+    font-size: 14px;
+    padding: 2.5px;
+    font-weight: 400;
+  }
+  #container-wrapper #testimonials {
+    height: fit-content;
+    width: 100vw;
+    background: #333;
+    position: relative;
+  }
+  #container-wrapper #testimonials h3 {
+    font-size: 3vw;
+    letter-spacing: 3px;
+    padding: 0 17px;
+    position: absolute;
+    top: 59px;
+    right: 31%;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  #container-wrapper #testimonials .bot {
+    font-size: 2.5vw;
+    letter-spacing: 3px;
+    padding: 0 20px;
+    font-weight: 600;
+    position: absolute;
+    top: 1056px;
+    right: 37%;
+    background: #333;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  #container-wrapper #testimonials #testies {
+    max-width: 80%;
+    border-top: 10px solid #fff;
+    border-bottom: 5px solid #fff;
+    margin: 60px auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  #container-wrapper #testimonials #testies .test-cards {
+    color: #fff;
+    padding-bottom: 15px;
+  }
+  #container-wrapper #testimonials #testies .test-cards h5 {
+    font-size: 4.5vw;
+    font-weight: 400;
+    padding-bottom: 10px;
+  }
+  #container-wrapper #testimonials #testies .test-cards p {
+    font-size: 2.5vw;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+  }
+  #container-wrapper #testimonials #testies .test-cards .test-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-top: 10px;
+  }
+  #container-wrapper #testimonials #testies .test-cards .test-image img {
+    height: 150px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  #container-wrapper #testimonials #testies .test-cards .test-image h6 {
+    margin: auto 10px;
+    font-weight: 100;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    padding-left: 10px;
+  }
+  #container-wrapper #map-con {
+    height: 600px;
+    width: 100vw;
+  }
+  #container-wrapper #map-con .map-box {
+    height: 100%;
+    width: 100%;
+    background: url("../../public/map.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow-x: scroll;
+  }
+  #container-wrapper #footer {
+    height: fit-content;
+    width: 100vw;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  #container-wrapper #footer #foot-locker {
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin: 0 auto;
+  }
+  #container-wrapper #footer #foot-locker .store {
+    text-align: center;
+  }
+  #container-wrapper #footer #foot-locker .store h3 {
+    font-size: 8vw;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  #container-wrapper #footer #foot-locker .store p {
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 2;
+    letter-spacing: 2px;
+    padding: 2px;
+  }
+  #container-wrapper #footer #foot-locker .store .foot-image img {
+    text-align: left;
+    height: 40px;
+    width: 40px;
+    padding: 15px 20px 0 0;
+  }
+  #container-wrapper #footer #foot-locker .address {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    position: relative;
-    transform: translate(0%);
+    margin: 0 auto;
   }
-  #container-wrapper .jumbo h1 {
-    color: #fff;
+  #container-wrapper #footer #foot-locker .address p {
+    font-size: 4vw;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+  }
+  #container-wrapper #footer #foot-locker .social {
+    margin: 0 auto;
+  }
+  #container-wrapper #footer #foot-locker .social a {
+    text-decoration: none;
+    color: #333;
+  }
+  #container-wrapper #footer #foot-locker .social a i {
     font-size: 8vw;
-    font-style: italic;
-    font-weight: 400;
-    font-family: "Nanum Myeongjo", serif;
-    letter-spacing: 12px;
-    line-height: 1.8;
-    text-transform: uppercase;
-    margin-left: 80px;
-    margin-top: 80px;
-  }
-  #container-wrapper .jumbo .nav-toggle {
-    background: transparent;
-    border-color: transparent;
-    font-size: 6vw;
-    color: #fff;
-    position: absolute;
-    top: 40px;
-    right: 70px;
-    cursor: pointer;
-  }
-  #container-wrapper .jumbo .nav-toggle:hover {
-    transform: rotate(0deg);
-  }
-
-  #mids {
-    height: 100%;
-    width: 100vw;
-    color: #1b1b1b;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 50px 0;
-    position: relative;
-    overflow-x: hidden;
-  }
-  #mids .left-mids {
-    margin-right: 0px;
-    border-right: 2px solid #d6d2d2;
-  }
-  #mids .left-mids .long {
-    height: 200px;
-    width: 400px;
-  }
-  #mids .left-mids .short {
-    height: 180px;
-    width: 200px;
-    position: absolute;
-    z-index: 2;
-    top: 280px;
-    left: 25%;
-  }
-  #mids .right-mids {
-    width: 75%;
-    overflow: hidden;
-    margin: 180px auto 0;
-  }
-  #mids .right-mids h2 {
-    font-size: 5vw;
-    font-family: "Nanum Myeongjo", serif;
-    margin-bottom: 20px;
-  }
-  #mids .right-mids p {
-    line-height: 1.8;
-    font-weight: 200;
-  }
-  #mids .right-mids button {
-    margin-top: 70px;
-    padding: 3px 15px;
-    font-family: "Nanum Myeongjo", serif;
-    outline: none;
-    cursor: pointer;
-  }
-
-  #atmos {
-    height: 100%;
-    width: 100vw;
-    color: #fff;
-    background: #1b1b1b;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    overflow-x: hidden;
-    padding: 0;
-  }
-  #atmos .left-atmos {
-    border-right: 2px solid #d6d2d2;
-    width: 75%;
-    overflow-x: hidden;
-    margin-bottom: 30px;
-    margin: 50px auto 10px;
-  }
-  #atmos .left-atmos h2 {
-    font-size: 5vw;
-    font-family: "Nanum Myeongjo", serif;
-    margin-bottom: 10px;
-    padding: 20px;
-  }
-  #atmos .left-atmos p {
-    line-height: 1.8;
-    font-weight: 200;
-    padding: 20px;
-  }
-  #atmos .left-atmos button {
-    margin-top: 30px;
-    padding: 3px 15px;
-    font-family: "Nanum Myeongjo", serif;
-    color: #fff;
-    background: #1b1b1b;
-    outline: none;
-    border-color: #fff;
-    cursor: pointer;
-  }
-  #atmos .right-atmos {
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    margin-left: 0;
-  }
-  #atmos .right-atmos .stub {
-    height: 220px;
-    width: 200px;
-    position: absolute;
-    z-index: 2;
-    top: 20px;
-    left: 50px;
-    margin-bottom: 50px;
-  }
-  #atmos .right-atmos .tower {
-    height: 200px;
-    width: 300px;
-    position: absolute;
-    top: 300px;
-    left: 50px;
+    padding: 30px;
   }
 }
