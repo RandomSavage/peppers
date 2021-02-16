@@ -1066,9 +1066,10 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    overflow-x: scroll;
   }
   #container-wrapper #footer {
-    height: 100px;
+    height: fit-content;
     width: 100vw;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -1076,21 +1077,21 @@ body {
   #container-wrapper #footer #foot-locker {
     max-width: 80%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    grid-template-columns: 1fr;
+    gap: 50px;
     margin: 0 auto;
   }
   #container-wrapper #footer #foot-locker .store {
     text-align: center;
   }
   #container-wrapper #footer #foot-locker .store h3 {
-    font-size: 2vw;
+    font-size: 8vw;
     font-weight: 600;
     letter-spacing: 3px;
     text-transform: uppercase;
   }
   #container-wrapper #footer #foot-locker .store p {
-    font-size: 1vw;
+    font-size: 4vw;
     font-weight: 100;
     line-height: 2;
     letter-spacing: 2px;
@@ -1106,19 +1107,23 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin: 0 auto;
   }
   #container-wrapper #footer #foot-locker .address p {
-    font-size: 1vw;
+    font-size: 4vw;
     font-weight: 100;
     line-height: 1.5;
     letter-spacing: 1.5px;
+  }
+  #container-wrapper #footer #foot-locker .social {
+    margin: 0 auto;
   }
   #container-wrapper #footer #foot-locker .social a {
     text-decoration: none;
     color: #333;
   }
   #container-wrapper #footer #foot-locker .social a i {
-    font-size: 2vw;
+    font-size: 8vw;
     padding: 30px;
   }
 }
