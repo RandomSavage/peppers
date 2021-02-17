@@ -224,6 +224,7 @@ body {
 }
 #container-wrapper #teaser {
   height: fit-content;
+  height: -moz-fit-content;
   width: 100vw;
   margin: 100px auto 20px;
   display: grid;
@@ -697,6 +698,7 @@ body {
   }
   #container-wrapper #menu {
     height: fit-content;
+    height: -moz-fit-content;
     width: 100vw;
     margin-top: 40px;
     margin-bottom: 0px;
@@ -747,6 +749,7 @@ body {
   }
   #container-wrapper #teaser {
     height: fit-content;
+    height: -moz-fit-content;
     width: 100vw;
     margin: 0 0 20px;
     display: grid;
@@ -982,6 +985,7 @@ body {
     font-weight: 400;
   }
   #container-wrapper #testimonials {
+    height: -moz-fit-content;
     height: fit-content;
     width: 100vw;
     background: #333;
@@ -1070,6 +1074,7 @@ body {
   }
   #container-wrapper #footer {
     height: fit-content;
+    height: -moz-fit-content;
     width: 100vw;
     padding-top: 60px;
     padding-bottom: 60px;

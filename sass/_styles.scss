@@ -190,6 +190,8 @@ body{
   }
   #teaser{
     height: fit-content;
+    height: -moz-fit-content;
+
     width: 100vw;
     margin: 100px auto 20px;
     display: grid;
@@ -693,6 +695,7 @@ body{
     #menu{
       // text-align: center;
       height: fit-content;
+      height: -moz-fit-content;
       width: 100vw;
       margin-top: 40px;
       margin-bottom: 0px;
@@ -743,6 +746,7 @@ body{
     }
     #teaser{
       height: fit-content;
+      height: -moz-fit-content;
       width: 100vw;
       margin: 0 0 20px;
       display: grid;
@@ -983,6 +987,7 @@ body{
     }
     #testimonials{
       height: fit-content;
+      height: -moz-fit-content;
       width: 100vw;
       background: #333;
       position: relative;
@@ -1073,6 +1078,7 @@ body{
     }
     #footer{
       height: fit-content;
+      height: -moz-fit-content;
       width: 100vw;
       padding-top: 60px;
       padding-bottom: 60px;
