@@ -528,13 +528,9 @@ body {
   height: 600px;
   width: 100vw;
 }
-#container-wrapper #map-con .map-box {
-  height: 100%;
-  width: 100%;
-  background: url("../../public/map.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+#container-wrapper #map-con #map-box {
+  height: 100vh;
+  width: 100vw;
 }
 #container-wrapper #footer {
   height: 100px;
@@ -1063,14 +1059,9 @@ body {
     height: 600px;
     width: 100vw;
   }
-  #container-wrapper #map-con .map-box {
+  #container-wrapper #map-con #map-box {
     height: 100%;
     width: 100%;
-    background: url("../../public/map.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow-x: scroll;
   }
   #container-wrapper #footer {
     height: fit-content;
