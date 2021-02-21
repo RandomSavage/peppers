@@ -32,6 +32,7 @@ function onMapClick(e) {
         .setLatLng(e.latlng)
         .setContent("You clicked the map at " + e.latlng.toString())
         .openOn(myMap);
+        myMap.locate({setView: true, maxZoom: 40});
 }
 
 myMap.on('click', onMapClick);
