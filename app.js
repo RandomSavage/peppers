@@ -1,3 +1,4 @@
+// const { getHeapSpaceStatistics } = require("v8");
 
   // initialize Leaflet
 let myMap = L.map('map-box').setView({lon: 0, lat: 0}, 2);
@@ -36,3 +37,12 @@ function onMapClick(e) {
 }
 
 myMap.on('click', onMapClick);
+
+
+
+let pepper = document.querySelector('.pepper');
+
+
+pepper.addEventListener('click', () => {
+  gsap.to(".pepper", {duration: 3, rotation: 360, x: 300, repeat: -1});
+})

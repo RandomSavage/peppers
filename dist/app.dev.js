@@ -2,6 +2,7 @@
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
+// const { getHeapSpaceStatistics } = require("v8");
 // initialize Leaflet
 var myMap = L.map('map-box').setView({
   lon: 0,
@@ -30,3 +31,12 @@ function onMapClick(e) {
 }
 
 myMap.on('click', onMapClick);
+var pepper = document.querySelector('.pepper');
+pepper.addEventListener('click', function () {
+  gsap.to(".pepper", {
+    duration: 3,
+    rotation: 360,
+    x: 300,
+    repeat: -1
+  });
+});
