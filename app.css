@@ -72,7 +72,7 @@ body {
 #container-wrapper #jumbo {
   height: 100%;
   width: 100%;
-  background: url("../../public/variety.jpg");
+  background: url("./public/variety.jpg");
   background-size: cover;
   background-position: 0 25%;
   background-repeat: no-repeat;
@@ -244,7 +244,7 @@ body {
 #container-wrapper #teaser .soups .image {
   height: 100%;
   width: 50%;
-  background: url("../../public/soup.jpg");
+  background: url("./public/soup.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -291,7 +291,7 @@ body {
 #container-wrapper #teaser .pasta .image {
   height: 100%;
   width: 50%;
-  background: url("../../public/pasta.jpg");
+  background: url("./public/pasta.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -348,7 +348,7 @@ body {
 #container-wrapper #teaser .salads .image {
   height: 100%;
   width: 50%;
-  background: url("../../public/salad.jpg");
+  background: url("./public/salad.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -387,7 +387,7 @@ body {
   height: 100%;
   width: 100vw;
   margin: 60px auto 0;
-  background: url("../../public/chefs.jpg");
+  background: url("./public/chefs.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -600,7 +600,7 @@ body {
   #container-wrapper #jumbo {
     height: 100vh;
     width: 100vw;
-    background: url("../../public/variety.jpg");
+    background: url("./public/variety.jpg");
     background-size: cover;
     background-position: 49% 25%;
     background-repeat: no-repeat;
@@ -767,7 +767,7 @@ body {
   #container-wrapper #teaser .soups .image {
     height: 100%;
     width: 60%;
-    background: url("../../public/soup.jpg");
+    background: url("./public/soup.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -814,7 +814,7 @@ body {
   #container-wrapper #teaser .pasta .image {
     height: 100%;
     width: 60%;
-    background: url("../../public/pasta.jpg");
+    background: url("./public/pasta.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -871,7 +871,7 @@ body {
   #container-wrapper #teaser .salads .image {
     height: 100%;
     width: 60%;
-    background: url("../../public/salad.jpg");
+    background: url("./public/salad.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -910,7 +910,7 @@ body {
     height: 100%;
     width: 100vw;
     margin: 60px auto 0;
-    background: url("../../public/chefs.jpg");
+    background: url("./public/chefs.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

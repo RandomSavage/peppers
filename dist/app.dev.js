@@ -26,11 +26,7 @@ var polygon = L.polygon([[51.509, -0.08], [51.503, -0.06], [51.51, -0.047], [51.
 var popup = L.popup();
 
 function onMapClick(e) {
-  popup.setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString()).openOn(myMap);
-  myMap.locate({
-    setView: true,
-    maxZoom: 40
-  });
+  popup.setLatLng(e.latlng).setContent("You clicked the map at " + e.latlng.toString()).openOn(myMap); // myMap.locate({setView: true, maxZoom: 40});
 }
 
 myMap.on('click', onMapClick);
